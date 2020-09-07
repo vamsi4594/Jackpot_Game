@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jackpot_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="qiH-Ev-JWy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JACKPOT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="I3k-VX-Mfi">
+                                <rect key="frame" x="82" y="74" width="250" height="60"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CA2-cW-F4h"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="bLj-pX-hW6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits: 1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUL-zd-UTJ">
+                                <rect key="frame" x="107" y="179" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Fnk-aF-ev3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="PNA-jf-vtN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="j9K-H6-3u2">
+                                <rect key="frame" x="20" y="248" width="374" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="caY-1K-gc2">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="126.66666666666667"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayQ-5B-JMs" customClass="CustomView" customModule="Jackpot_Game" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="126.66666666666667"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="uFm-l0-MMK">
+                                                        <rect key="frame" x="8" y="8" width="102" height="110.66666666666667"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="uFm-l0-MMK" firstAttribute="top" secondItem="ayQ-5B-JMs" secondAttribute="topMargin" id="Kjm-Gs-Lh2"/>
+                                                    <constraint firstItem="uFm-l0-MMK" firstAttribute="leading" secondItem="ayQ-5B-JMs" secondAttribute="leadingMargin" id="eyh-PM-jLZ"/>
+                                                    <constraint firstItem="uFm-l0-MMK" firstAttribute="centerX" secondItem="ayQ-5B-JMs" secondAttribute="centerX" id="gef-6f-Z4r"/>
+                                                    <constraint firstItem="uFm-l0-MMK" firstAttribute="centerY" secondItem="ayQ-5B-JMs" secondAttribute="centerY" id="l7p-fY-U81"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKq-aT-p3r" customClass="CustomView" customModule="Jackpot_Game" customModuleProvider="target">
+                                                <rect key="frame" x="128" y="0.0" width="118" height="126.66666666666667"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="phS-sw-VqJ">
+                                                        <rect key="frame" x="8" y="8" width="102" height="110.66666666666667"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="phS-sw-VqJ" firstAttribute="centerX" secondItem="eKq-aT-p3r" secondAttribute="centerX" id="HUs-vo-4yV"/>
+                                                    <constraint firstItem="phS-sw-VqJ" firstAttribute="leading" secondItem="eKq-aT-p3r" secondAttribute="leadingMargin" id="dbB-fY-Xyb"/>
+                                                    <constraint firstItem="phS-sw-VqJ" firstAttribute="top" secondItem="eKq-aT-p3r" secondAttribute="topMargin" id="hF9-qX-apK"/>
+                                                    <constraint firstItem="phS-sw-VqJ" firstAttribute="centerY" secondItem="eKq-aT-p3r" secondAttribute="centerY" id="op2-xY-03W"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRc-E3-G6V" customClass="CustomView" customModule="Jackpot_Game" customModuleProvider="target">
+                                                <rect key="frame" x="256" y="0.0" width="118" height="126.66666666666667"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="lHl-kp-R7S">
+                                                        <rect key="frame" x="8" y="8" width="102" height="110.66666666666667"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="lHl-kp-R7S" firstAttribute="top" secondItem="HRc-E3-G6V" secondAttribute="topMargin" id="8k8-5H-tbG"/>
+                                                    <constraint firstItem="lHl-kp-R7S" firstAttribute="centerX" secondItem="HRc-E3-G6V" secondAttribute="centerX" id="Wic-7A-s4W"/>
+                                                    <constraint firstItem="lHl-kp-R7S" firstAttribute="leading" secondItem="HRc-E3-G6V" secondAttribute="leadingMargin" id="nGu-Ld-C0d"/>
+                                                    <constraint firstItem="lHl-kp-R7S" firstAttribute="centerY" secondItem="HRc-E3-G6V" secondAttribute="centerY" id="nMe-cL-ZQQ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hgl-BP-Um4">
+                                        <rect key="frame" x="0.0" y="136.66666666666669" width="374" height="126.66666666666669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vp0-RD-JWx" customClass="CustomView" customModule="Jackpot_Game" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="126.66666666666667"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="ITf-2H-v5v">
+                                                        <rect key="frame" x="8" y="8" width="102" height="110.66666666666667"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="ITf-2H-v5v" firstAttribute="centerX" secondItem="vp0-RD-JWx" secondAttribute="centerX" id="1Be-qE-CtE"/>
+                                                    <constraint firstItem="ITf-2H-v5v" firstAttribute="top" secondItem="vp0-RD-JWx" secondAttribute="topMargin" id="Z9F-MB-lxk"/>
+                                                    <constraint firstItem="ITf-2H-v5v" firstAttribute="leading" secondItem="vp0-RD-JWx" secondAttribute="leadingMargin" id="tYv-TK-7iG"/>
+                                                    <constraint firstItem="ITf-2H-v5v" firstAttribute="centerY" secondItem="vp0-RD-JWx" secondAttribute="centerY" id="w1n-HU-Qjb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svk-Mw-fVa" customClass="CustomView" customModule="Jackpot_Game" customModuleProvider="target">
+                                                <rect key="frame" x="128" y="0.0" width="118" height="126.66666666666667"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="OcZ-Vz-7QA">
+                                                        <rect key="frame" x="8" y="8" width="102" height="110.66666666666667"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="OcZ-Vz-7QA" firstAttribute="centerX" secondItem="svk-Mw-fVa" secondAttribute="centerX" id="7PI-nC-hZs"/>
+                                                    <constraint firstItem="OcZ-Vz-7QA" firstAttribute="leading" secondItem="svk-Mw-fVa" secondAttribute="leadingMargin" id="Lwx-d7-ygm"/>
+                                                    <constraint firstItem="OcZ-Vz-7QA" firstAttribute="top" secondItem="svk-Mw-fVa" secondAttribute="topMargin" id="SIY-nt-rWF"/>
+                                                    <constraint firstItem="OcZ-Vz-7QA" firstAttribute="centerY" secondItem="svk-Mw-fVa" secondAttribute="centerY" id="qzV-y1-Rye"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOH-gj-7u8" customClass="CustomView" customModule="Jackpot_Game" customModuleProvider="target">
+                                                <rect key="frame" x="256" y="0.0" width="118" height="126.66666666666667"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="L6Y-nb-ra2">
+                                                        <rect key="frame" x="8" y="8" width="102" height="110.66666666666667"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="L6Y-nb-ra2" firstAttribute="centerY" secondItem="oOH-gj-7u8" secondAttribute="centerY" id="QB1-CV-CcY"/>
+                                                    <constraint firstItem="L6Y-nb-ra2" firstAttribute="top" secondItem="oOH-gj-7u8" secondAttribute="topMargin" id="f5i-m1-1IM"/>
+                                                    <constraint firstItem="L6Y-nb-ra2" firstAttribute="centerX" secondItem="oOH-gj-7u8" secondAttribute="centerX" id="oar-SW-xaB"/>
+                                                    <constraint firstItem="L6Y-nb-ra2" firstAttribute="leading" secondItem="oOH-gj-7u8" secondAttribute="leadingMargin" id="vXr-mN-6Fy"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AgP-17-mUL">
+                                        <rect key="frame" x="0.0" y="273.33333333333337" width="374" height="126.66666666666669"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47k-3S-HgT" customClass="CustomView" customModule="Jackpot_Game" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="126.66666666666667"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-4D-87W">
+                                                        <rect key="frame" x="8" y="8" width="102" height="110.66666666666667"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="3ZK-4D-87W" firstAttribute="centerY" secondItem="47k-3S-HgT" secondAttribute="centerY" id="Jym-dL-VbB"/>
+                                                    <constraint firstItem="3ZK-4D-87W" firstAttribute="centerX" secondItem="47k-3S-HgT" secondAttribute="centerX" id="KpK-A7-Yrc"/>
+                                                    <constraint firstItem="3ZK-4D-87W" firstAttribute="leading" secondItem="47k-3S-HgT" secondAttribute="leadingMargin" id="Z8T-Q9-mMF"/>
+                                                    <constraint firstItem="3ZK-4D-87W" firstAttribute="top" secondItem="47k-3S-HgT" secondAttribute="topMargin" id="ig7-5E-Kg2"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4a-x4-3iV" customClass="CustomView" customModule="Jackpot_Game" customModuleProvider="target">
+                                                <rect key="frame" x="128" y="0.0" width="118" height="126.66666666666667"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="wuy-HE-8hX">
+                                                        <rect key="frame" x="8" y="8" width="102" height="110.66666666666667"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="wuy-HE-8hX" firstAttribute="top" secondItem="M4a-x4-3iV" secondAttribute="topMargin" id="7cT-1I-ZXE"/>
+                                                    <constraint firstItem="wuy-HE-8hX" firstAttribute="centerX" secondItem="M4a-x4-3iV" secondAttribute="centerX" id="DxG-U5-R5z"/>
+                                                    <constraint firstItem="wuy-HE-8hX" firstAttribute="leading" secondItem="M4a-x4-3iV" secondAttribute="leadingMargin" id="KHb-NG-f0c"/>
+                                                    <constraint firstItem="wuy-HE-8hX" firstAttribute="centerY" secondItem="M4a-x4-3iV" secondAttribute="centerY" id="pp4-h4-4ET"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vF1-x4-5qH" customClass="CustomView" customModule="Jackpot_Game" customModuleProvider="target">
+                                                <rect key="frame" x="256" y="0.0" width="118" height="126.66666666666667"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="uqL-eC-1FL">
+                                                        <rect key="frame" x="8" y="8" width="102" height="110.66666666666667"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="uqL-eC-1FL" firstAttribute="leading" secondItem="vF1-x4-5qH" secondAttribute="leadingMargin" id="BfY-4l-O6B"/>
+                                                    <constraint firstItem="uqL-eC-1FL" firstAttribute="centerY" secondItem="vF1-x4-5qH" secondAttribute="centerY" id="Hff-CS-M9V"/>
+                                                    <constraint firstItem="uqL-eC-1FL" firstAttribute="top" secondItem="vF1-x4-5qH" secondAttribute="topMargin" id="f6X-mb-VIE"/>
+                                                    <constraint firstItem="uqL-eC-1FL" firstAttribute="centerX" secondItem="vF1-x4-5qH" secondAttribute="centerX" id="mce-XP-WW3"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="4UY-TO-9b7"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFX-uI-TrG">
+                                <rect key="frame" x="132" y="794" width="150" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.035883881761493042" blue="0.035957022819975926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="BKa-BU-SaW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="xLX-EB-Yhf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <state key="normal" title="SPIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSpin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P7a-N0-Xgr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="MainView"/>
+                        <constraints>
+                            <constraint firstItem="j9K-H6-3u2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0yf-ab-dmz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SFX-uI-TrG" secondAttribute="bottom" constant="20" id="30Q-2p-O7B"/>
+                            <constraint firstItem="qiH-Ev-JWy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3DN-V1-cjM"/>
+                            <constraint firstAttribute="trailing" secondItem="qiH-Ev-JWy" secondAttribute="trailing" id="78D-XB-cp8"/>
+                            <constraint firstItem="aUL-zd-UTJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BKo-8U-hrU"/>
+                            <constraint firstItem="I3k-VX-Mfi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Euz-mQ-hFk"/>
+                            <constraint firstItem="qiH-Ev-JWy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ITI-Vn-2SO"/>
+                            <constraint firstItem="SFX-uI-TrG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFy-Ns-GEz"/>
+                            <constraint firstItem="j9K-H6-3u2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SSz-Do-WBC"/>
+                            <constraint firstItem="aUL-zd-UTJ" firstAttribute="top" secondItem="I3k-VX-Mfi" secondAttribute="bottom" constant="45" id="aJe-Gy-c8k"/>
+                            <constraint firstItem="qiH-Ev-JWy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ckj-7c-oN1"/>
+                            <constraint firstItem="qiH-Ev-JWy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dnR-3G-Seu"/>
+                            <constraint firstItem="j9K-H6-3u2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hKD-Ws-Fm6"/>
+                            <constraint firstItem="I3k-VX-Mfi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iHJ-f1-svP"/>
+                            <constraint firstAttribute="bottom" secondItem="qiH-Ev-JWy" secondAttribute="bottom" id="zZm-8g-U6U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="creditsLabel" destination="aUL-zd-UTJ" id="SxT-UR-ARz"/>
+                        <outlet property="imageView0" destination="uFm-l0-MMK" id="NNg-Ec-64w"/>
+                        <outlet property="imageView1" destination="phS-sw-VqJ" id="mOn-x8-hIH"/>
+                        <outlet property="imageView2" destination="lHl-kp-R7S" id="blx-br-pSc"/>
+                        <outlet property="imageView3" destination="ITf-2H-v5v" id="xcg-yD-CT7"/>
+                        <outlet property="imageView4" destination="OcZ-Vz-7QA" id="blW-vs-Pht"/>
+                        <outlet property="imageView5" destination="L6Y-nb-ra2" id="6kt-Kf-48o"/>
+                        <outlet property="imageView6" destination="3ZK-4D-87W" id="k5p-SN-MgS"/>
+                        <outlet property="imageView7" destination="wuy-HE-8hX" id="zbw-xw-JM1"/>
+                        <outlet property="imageView8" destination="uqL-eC-1FL" id="Yrz-Yu-Vrm"/>
+                        <outlet property="popupImageView" destination="SA4-Co-Gqt" id="8Ns-fk-Fi3"/>
+                        <outlet property="popupView" destination="CtJ-HN-Pzt" id="uTw-z0-v8h"/>
+                        <outlet property="spinButton" destination="SFX-uI-TrG" id="KYT-iq-aUx"/>
+                        <outlet property="titleLabel" destination="I3k-VX-Mfi" id="QGr-mg-V6O"/>
+                        <outlet property="view0" destination="ayQ-5B-JMs" id="RUE-7U-CGB"/>
+                        <outlet property="view1" destination="eKq-aT-p3r" id="9By-UL-irn"/>
+                        <outlet property="view2" destination="HRc-E3-G6V" id="ngY-oQ-6fN"/>
+                        <outlet property="view3" destination="vp0-RD-JWx" id="dSt-fP-FSM"/>
+                        <outlet property="view4" destination="svk-Mw-fVa" id="Ezq-sk-ESr"/>
+                        <outlet property="view5" destination="oOH-gj-7u8" id="Pqk-Fk-csI"/>
+                        <outlet property="view6" destination="47k-3S-HgT" id="jux-xc-LBt"/>
+                        <outlet property="view7" destination="M4a-x4-3iV" id="FQ4-ev-KUa"/>
+                        <outlet property="view8" destination="vF1-x4-5qH" id="vfO-oe-pBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtJ-HN-Pzt" userLabel="popupView">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Awesome" translatesAutoresizingMaskIntoConstraints="NO" id="SA4-Co-Gqt">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="WCs-Il-GbQ"/>
+                                <constraint firstAttribute="height" constant="300" id="npo-XQ-Uft"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="BTp-sz-TaK"/>
+                        <constraint firstItem="SA4-Co-Gqt" firstAttribute="centerY" secondItem="CtJ-HN-Pzt" secondAttribute="centerY" id="nNM-n4-30l"/>
+                        <constraint firstAttribute="height" constant="300" id="uaQ-I0-wt5"/>
+                        <constraint firstItem="SA4-Co-Gqt" firstAttribute="centerX" secondItem="CtJ-HN-Pzt" secondAttribute="centerX" id="zIb-1K-mCs"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="V3u-DK-sWj"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Awesome" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="Untitled design" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="apple" width="64" height="64"/>
+    </resources>
+</document>
